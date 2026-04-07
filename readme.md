@@ -10,7 +10,7 @@ this is a minimal implementation of the rag model for question answering.
 ##installation
 
 ```bash
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
 ##usage
