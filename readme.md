@@ -33,9 +33,9 @@ cp .env.example .env
 .\.venv\Scripts\activate
 ```
 
-## usage
+## run fast api
 
 ```bash
-python main.py
+uvicorn main:app --reload --host [IP_ADDRESS] --port 5000
 ```
 
