@@ -1,9 +1,14 @@
 from fastapi import FastAPI , APIRouter
+import os
+
 
 base_router = APIRouter()
 
-@base_router.get("/welcome")
+@base_router.get("/")
 def read_root():
+    app_name = os.getenv("APP_NAME")
+    app_version = os.getenv("APP_VERSION")
     return {
-        "message": "Welcome to the RAG API"
+        "app_name": app_name,
+        "app_version": app_version
         }
